@@ -1,12 +1,12 @@
-const getCharButton = document.querySelector('.get-char-btn');
-const getPlanetButton = document.querySelector('.get-planet-btn');
-const getShipButton = document.querySelector('.get-spaceship-btn');
+// Global variables
 
 const baseURL = 'https://swapi.dev/api/';
+// const getCharButton = document.querySelector('.get-char-btn');
+// const getPlanetButton = document.querySelector('.get-planet-btn');
+// const getShipButton = document.querySelector('.get-spaceship-btn');
 
-function generateRandomNumber(min, max) {
-  return Math.floor(Math.random() * max - min + min);
-}
+let generateRandomNumber = (min, max) =>
+  Math.floor(Math.random() * max - min + min);
 
 function catchNotFoundError() {
   Swal.fire('Not found', '404 ERROR', 'error');
@@ -80,6 +80,14 @@ function getSpaceship() {
   }
 }
 
-getCharButton.addEventListener('click', getCharacter);
-getPlanetButton.addEventListener('click', getPlanet);
-getShipButton.addEventListener('click', getSpaceship);
+// Event listeners which triggers the AXIOS requests
+
+const getCharButton = document
+  .querySelector('.get-char-btn')
+  .addEventListener('click', getCharacter);
+const getPlanetButton = document
+  .querySelector('.get-planet-btn')
+  .addEventListener('click', getPlanet);
+const getShipButton = document
+  .querySelector('.get-spaceship-btn')
+  .addEventListener('click', getSpaceship);
