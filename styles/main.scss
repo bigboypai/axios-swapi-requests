@@ -68,6 +68,9 @@ header {
   .card-title {
     font-size: 2.5rem;
   }
+  span {
+    font-size: 1.4rem;
+  }
 }
 
 .card:hover {
@@ -85,14 +88,18 @@ ul {
 
 // request Button Style
 
-.get-btn {
+.get-char-btn,
+.get-planet-btn,
+.get-spaceship-btn {
   padding: 1.5rem 3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 
   background-color: $color-secondary;
 }
-.get-btn:hover {
+.get-char-btn,
+.get-planet-btn,
+.get-spaceship-btn:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }

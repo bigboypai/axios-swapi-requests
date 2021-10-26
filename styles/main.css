@@ -90,6 +90,10 @@ header h1 {
   font-size: 2.5rem;
 }
 
+.card span {
+  font-size: 1.4rem;
+}
+
 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -100,7 +104,9 @@ ul li {
   text-align: justify;
 }
 
-.get-btn {
+.get-char-btn,
+.get-planet-btn,
+.get-spaceship-btn {
   padding: 1.5rem 3rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -109,7 +115,9 @@ ul li {
   background-color: #ffc107;
 }
 
-.get-btn:hover {
+.get-char-btn,
+.get-planet-btn,
+.get-spaceship-btn:hover {
   cursor: pointer;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
