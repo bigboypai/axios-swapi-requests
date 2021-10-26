@@ -19,7 +19,6 @@ function getCharacter() {
   const charSkin = document.querySelector('.char-skin');
 
   axios({
-    method: 'get',
     url: `${baseURL}/people/${generateRandomNumber(1, 25)}`,
   })
     .then(
@@ -42,7 +41,6 @@ function getPlanet() {
   const planetRotation = document.querySelector('.planet-rotation');
 
   axios({
-    method: 'get',
     url: `${baseURL}/planets/${generateRandomNumber(1, 25)}`,
   })
     .then(
@@ -66,8 +64,7 @@ function getSpaceship() {
     const shipCrew = document.querySelector('.ship-crew');
 
     axios({
-      method: 'get',
-      url: `${baseURL}/starships/${generateRandomNumber(1, 25)}`,
+      url: `${baseURL}/starships/${generateRandomNumber(1, 15)}`,
     })
       .then(
         (res) => (
